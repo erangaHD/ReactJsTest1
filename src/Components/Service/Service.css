@@ -1,0 +1,81 @@
+@import '../../vars.css';
+
+.serviceContainer{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 8%;
+    padding-left: 8%;
+}
+
+.serviceTitle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.serviceTitle h2{
+    font-size: 45px;
+    font-family: var(--font-robot);
+    font-weight: 500;
+}
+
+.underLine{
+    position: relative;
+    top: -30px;
+    width: 250px;
+    height: 4px;
+    background: var(--color-primeDark);
+}
+
+
+.serviceCards{    
+    display: flex; 
+    flex-direction: row;   
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.card{    
+    
+    flex: 1;
+    max-width: 30%;
+    box-sizing: border-box;
+    transition: ease-in-out;
+    transition-duration: 0.30s;
+}
+
+.card:hover{
+    transform: scale(1.025);
+}
+
+.viewAll{
+    background-image: linear-gradient(to right, var(--color-primeLight), var(--color-primeDark));
+    color: var(--color-text);
+    font-size: 15px;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 100px;
+    margin: 20px;
+    margin-bottom: 40px;
+    cursor: pointer;
+    transition: ease-in-out;
+    transition-duration: 0.35s;
+}
+
+.viewAll:hover{
+    background-image: linear-gradient(to right, var(--color-primeDark), var(--color-primeLight));
+    transform: scale(1.025);
+}
+
+@media screen and (max-width:830px) {
+    
+    .serviceCards{
+        flex-direction: column;
+    }
+
+    .card{
+        min-width: 100%;
+    }
+}

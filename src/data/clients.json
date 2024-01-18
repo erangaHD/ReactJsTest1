@@ -1,0 +1,14 @@
+[
+    {
+        "name" : "Martha",
+        "company" : "Co-founder at abc",
+        "ImgUrl" : "woman.webp",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, architecto ullam! Quae dolore vitae possimus nulla pariatur tempora magnam culpa quaerat corporis!"
+    },
+    {
+        "name" : "Jhone",
+        "company" : "Director at XYZ",
+        "ImgUrl" : "man.webp",
+        "description": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eum, architecto ullam! Quae dolore vitae possimus nulla pariatur tempora magnam culpa quaerat corporis!"
+    }
+]

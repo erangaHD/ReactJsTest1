@@ -1,0 +1,83 @@
+@import '../../vars.css';
+
+.navbar{
+    position: fixed;
+    top: 0;
+    margin: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px;
+    /* padding-left: 5%;
+    padding-right: 5%; */
+    background-image: linear-gradient(to right, var(--color-primeLight), var(--color-primeDark));
+    color: var(--color-text);
+    z-index: 10;
+}
+
+.logo{
+    width: 60px;
+}
+
+.navLinks{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: center;
+}
+
+.menuIcon{
+    width: 40px;   
+    display: none; 
+}
+
+.openUl, .closeUl{
+    display: flex;
+    font-family: var(--font-robot);
+    font-size: 20px;
+    font-weight: 500;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    padding-right: 20px;
+
+}
+
+.navLink{
+    list-style: none;
+    cursor: pointer;
+}
+
+.menuIcon{
+    cursor: pointer;
+}
+
+@media screen and (max-width:830px) {
+
+    .navbar{
+        align-items: flex-start;
+        
+    }
+    .navLinks{
+        flex-direction: column;
+        padding-right: 20px;
+        align-items: flex-end;
+    }
+
+    .menuIcon{
+        display: block;
+        padding-right: 20px;
+    }
+
+    .openUl{
+        flex-direction: column;
+        align-items: flex-end;
+        
+    }
+
+    .closeUl{
+        display: none;
+    }
+}
